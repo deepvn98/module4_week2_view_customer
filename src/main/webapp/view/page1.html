@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>page1</title>
+</head>
+<body>
+<!--<div th:replace="/menu" ></div>-->
+<h1>Xin chào</h1>
+<table border="1 solid" width="70%">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+    </tr>
+    <tr th:each="c:${list}">
+        <td th:text="${c.name}"></td>
+        <td th:text="${c.age}"></td>
+    </tr>
+</table>
+</body>
+</html>
